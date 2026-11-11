@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POM Quarry Materials Supply | Gravel, Aggregate & Backfill – Port Moresby</title>
+    <meta name="description" content="POM Quarry Materials Supply – Quality gravel, aggregate, builder's mix, road base and backfill materials. Truck-load delivery across Port Moresby. Call or WhatsApp 7078 7853.">
+    <meta name="keywords" content="quarry materials Port Moresby, gravel POM, aggregate PNG, backfill materials, builder's mix gravel, road base, truck load delivery, construction materials Port Moresby">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a1a1a;
+            --primary-dark: #0d0d0d;
+            --accent: #f5c518;
+            --accent-hover: #e0b000;
+            --accent-light: rgba(245, 197, 24, 0.12);
+            --earth: #8B5A2B;
+            --earth-light: #a67c52;
+            --text: #1f1f1f;
+            --text-light: #555555;
+            --bg: #f8f7f4;
+            --white: #ffffff;
+            --border: #e5e2db;
+            --shadow: 0 4px 20px rgba(0,0,0,0.08);
+            --shadow-lg: 0 12px 40px rgba(0,0,0,0.12);
+            --radius: 12px;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--bg); line-height: 1.65; padding-bottom: 78px; }
+        h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; line-height: 1.25; }
+        .container { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+        a { text-decoration: none; color: inherit; }
+        img { max-width: 100%; display: block; }
+
+        /* Header */
+        header {
+            background: var(--primary);
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.25);
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 0;
+            gap: 20px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0;
+        }
+        .logo img {
+            height: 48px;
+            width: auto;
+            display: block;
+        }
+        .logo-text {
+            display: none;
+        }
+        nav { display: flex; align-items: center; gap: 6px; }
+        nav a {
+            color: rgba(255,255,255,0.88);
+            font-weight: 500;
+            font-size: 0.92rem;
+            padding: 8px 14px;
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+        nav a:hover, nav a.active { color: var(--accent); background: rgba(255,255,255,0.06); }
+        .header-cta {
+            background: var(--accent);
+            color: var(--primary) !important;
+            font-weight: 700 !important;
+            padding: 10px 18px !important;
+            border-radius: 8px;
+        }
+        .header-cta:hover { background: var(--accent-hover) !important; color: var(--primary) !important; }
+        .menu-toggle { display: none; background: none; border: none; color: white; font-size: 1.6rem; cursor: pointer; }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 50%, #1f1f1f 100%);
+            color: white;
+            padding: 70px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('images/flyer-main.jpg') center/cover no-repeat;
+            opacity: 0.18;
+        }
+        .hero .container { position: relative; z-index: 2; }
+        .hero-badge {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 0.8rem;
+            padding: 6px 14px;
+            border-radius: 50px;
+            margin-bottom: 18px;
+            letter-spacing: 0.4px;
+            text-transform: uppercase;
+        }
+        .hero h1 {
+            font-size: clamp(2.1rem, 5vw, 3.1rem);
+            font-weight: 800;
+            max-width: 720px;
+            margin-bottom: 18px;
+            letter-spacing: -0.5px;
+        }
+        .hero h1 span { color: var(--accent); }
+        .hero p {
+            font-size: 1.15rem;
+            color: rgba(255,255,255,0.85);
+            max-width: 560px;
+            margin-bottom: 32px;
+            line-height: 1.7;
+        }
+        .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 14px 26px;
+            border-radius: 10px;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-primary {
+            background: var(--accent);
+            color: var(--primary);
+        }
+        .btn-primary:hover { background: var(--accent-hover); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(245,197,24,0.35); }
+        .btn-outline {
+            background: transparent;
+            color: white;
+            border: 2px solid rgba(255,255,255,0.35);
+        }
+        .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+
+        /* Trust bar */
+        .trust-bar {
+            background: var(--white);
+            border-bottom: 1px solid var(--border);
+            padding: 22px 0;
+        }
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+        .trust-item strong { display: block; font-size: 1.05rem; font-weight: 700; color: var(--primary); margin-bottom: 2px; }
+        .trust-item span { font-size: 0.88rem; color: var(--text-light); }
+
+        /* Section common */
+        section { padding: 70px 0; }
+        .section-header { text-align: center; max-width: 640px; margin: 0 auto 48px; }
+        .section-header h2 { font-size: clamp(1.7rem, 3.5vw, 2.2rem); font-weight: 700; margin-bottom: 12px; }
+        .section-header p { color: var(--text-light); font-size: 1.05rem; }
+        .section-label {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--earth);
+            margin-bottom: 10px;
+        }
+
+        /* Materials */
+        .materials { background: var(--white); }
+        .materials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+        .material-card {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 28px 24px;
+            transition: all 0.25s;
+        }
+        .material-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--accent);
+        }
+        .material-icon {
+            width: 56px;
+            height: 56px;
+            background: var(--accent-light);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            margin-bottom: 16px;
+        }
+        .material-card h3 { font-size: 1.15rem; margin-bottom: 8px; }
+        .material-card p { font-size: 0.95rem; color: var(--text-light); margin-bottom: 14px; }
+        .material-sizes {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--earth);
+            background: rgba(139,90,43,0.08);
+            padding: 6px 12px;
+            border-radius: 6px;
+            display: inline-block;
+        }
+
+        /* Pricing */
+        .pricing { background: var(--white); }
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+            margin-bottom: 32px;
+        }
+        .price-card {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 28px 24px;
+            text-align: center;
+            transition: all 0.25s;
+            position: relative;
+        }
+        .price-card:hover {
+            border-color: var(--accent);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-3px);
+        }
+        .price-card.featured {
+            border: 2px solid var(--accent);
+            background: #fffdf5;
+        }
+        .price-card .badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--accent);
+            color: var(--primary);
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 4px 14px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .price-card h3 {
+            font-size: 1.15rem;
+            margin-bottom: 8px;
+            margin-top: 6px;
+        }
+        .price-card .price-label {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 12px;
+        }
+        .price-card .price-value {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 6px;
+            font-family: 'Poppins', sans-serif;
+        }
+        .price-card .price-note {
+            font-size: 0.85rem;
+            color: var(--earth);
+            font-weight: 600;
+            margin-bottom: 18px;
+        }
+        .price-card ul {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 20px;
+            font-size: 0.92rem;
+            color: var(--text-light);
+        }
+        .price-card ul li {
+            padding: 6px 0;
+            padding-left: 22px;
+            position: relative;
+        }
+        .price-card ul li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: 700;
+        }
+        .price-card .btn {
+            width: 100%;
+            justify-content: center;
+            font-size: 0.95rem;
+            padding: 12px 18px;
+        }
+        .pricing-note {
+            background: var(--accent-light);
+            border-left: 4px solid var(--accent);
+            padding: 18px 22px;
+            border-radius: 0 var(--radius) var(--radius) 0;
+            font-size: 0.95rem;
+            color: var(--text);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Why Us */
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 28px;
+        }
+        .why-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 32px 28px;
+            box-shadow: var(--shadow);
+            border-top: 4px solid var(--accent);
+        }
+        .why-card h3 { font-size: 1.2rem; margin-bottom: 10px; }
+        .why-card p { color: var(--text-light); font-size: 0.98rem; }
+
+        /* CTA Banner */
+        .cta-banner {
+            background: linear-gradient(135deg, var(--primary) 0%, #2a2a2a 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        .cta-banner h2 { font-size: clamp(1.6rem, 3.5vw, 2.1rem); margin-bottom: 14px; }
+        .cta-banner p { color: rgba(255,255,255,0.8); max-width: 520px; margin: 0 auto 28px; font-size: 1.05rem; }
+        .cta-banner .btn-primary { font-size: 1.05rem; padding: 16px 32px; }
+
+        /* Footer */
+        footer {
+            background: var(--primary-dark);
+            color: rgba(255,255,255,0.75);
+            padding: 50px 0 30px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 36px;
+        }
+        .footer-brand .logo { margin-bottom: 14px; }
+        .footer-brand p { font-size: 0.95rem; line-height: 1.7; max-width: 300px; }
+        .footer-col h4 {
+            color: white;
+            font-size: 1rem;
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+        .footer-col a, .footer-col p {
+            display: block;
+            font-size: 0.92rem;
+            margin-bottom: 10px;
+            transition: color 0.2s;
+        }
+        .footer-col a:hover { color: var(--accent); }
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 22px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.88rem;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        /* Floating Contact Bar */
+        .floating-contact {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(90deg, #128C7E, #075E54);
+            color: white;
+            z-index: 9999;
+            box-shadow: 0 -4px 24px rgba(0,0,0,0.2);
+            padding: 11px 0;
+        }
+        .floating-contact .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        .floating-contact .msg {
+            font-weight: 600;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .floating-contact a.wa-btn {
+            background: white;
+            color: #075E54;
+            font-weight: 700;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s;
+        }
+        .floating-contact a.wa-btn:hover { transform: scale(1.03); box-shadow: 0 4px 14px rgba(0,0,0,0.15); }
+
+        /* Mobile */
+        @media (max-width: 900px) {
+            .trust-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+            nav { display: none; }
+            .menu-toggle { display: block; }
+            nav.open {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--primary);
+                padding: 16px;
+                gap: 4px;
+                box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+            }
+            .header-inner { position: relative; }
+        }
+        @media (max-width: 600px) {
+            .hero { padding: 50px 0 60px; }
+            .trust-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+            .floating-contact .msg span { display: none; }
+            .floating-contact .container { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="POM Quarry Materials Supply">
+            </a>
+            <button class="menu-toggle" aria-label="Menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+            <nav>
+                <a href="index.html" class="active">Home</a>
+                <a href="products.html">Products</a>
+                <a href="delivery.html">Delivery</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="https://wa.me/67570787853" class="header-cta" target="_blank" rel="noopener">WhatsApp Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-badge">Available Now • Truck-Load Delivery</div>
+            <h1>Quality Quarry Materials <span>Delivered Fast</span></h1>
+            <p>Gravel, aggregate, builder’s mix, road base and backfill materials for construction projects across Port Moresby. Reliable supply. Competitive rates. Full truck-load service.</p>
+            <div class="hero-actions">
+                <a href="https://wa.me/67570787853?text=Hi%2C%20I%20need%20quarry%20materials.%20Please%20quote%20me." class="btn btn-primary" target="_blank" rel="noopener">
+                    💬 Get a Quote on WhatsApp
+                </a>
+                <a href="products.html" class="btn btn-outline">View Materials</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <div class="trust-bar">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <strong>Truck-Load Ready</strong>
+                    <span>Full loads delivered</span>
+                </div>
+                <div class="trust-item">
+                    <strong>Multiple Sizes</strong>
+                    <span>10mm • 14mm • 20mm</span>
+                </div>
+                <div class="trust-item">
+                    <strong>Local Supply</strong>
+                    <span>Port Moresby based</span>
+                </div>
+                <div class="trust-item">
+                    <strong>Fast Response</strong>
+                    <span>WhatsApp 7078 7853</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Materials Overview -->
+    <section class="materials">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">What We Supply</div>
+                <h2>Quarry Materials for Every Project</h2>
+                <p>From foundation work to road base and landscaping — we stock the essential aggregates builders and contractors need.</p>
+            </div>
+            <div class="materials-grid">
+                <div class="material-card">
+                    <div class="material-icon">🪨</div>
+                    <h3>Builder’s Mix Gravel</h3>
+                    <p>Ideal for concrete, foundations and general building work. Clean, well-graded material.</p>
+                    <div class="material-sizes">10mm • 14mm • 20mm</div>
+                </div>
+                <div class="material-card">
+                    <div class="material-icon">⬜</div>
+                    <h3>Aggregate Gravel</h3>
+                    <p>High-quality crushed aggregate for structural concrete, drainage and base layers.</p>
+                    <div class="material-sizes">10mm • 14mm • 20mm</div>
+                </div>
+                <div class="material-card">
+                    <div class="material-icon">🟤</div>
+                    <h3>Backfill Materials</h3>
+                    <p>Suitable for filling, levelling and compacting around foundations and trenches.</p>
+                    <div class="material-sizes">Bulk loads available</div>
+                </div>
+                <div class="material-card">
+                    <div class="material-icon">🛤️</div>
+                    <h3>Road Base Gravel</h3>
+                    <p>Durable base course material for driveways, access roads and hardstand areas.</p>
+                    <div class="material-sizes">Full truck loads</div>
+                </div>
+                <div class="material-card">
+                    <div class="material-icon">🏜️</div>
+                    <h3>Fine & Coarse Sand Gravel</h3>
+                    <p>Clean sand and gravel blends for plastering, bedding and finishing work.</p>
+                    <div class="material-sizes">Multiple grades</div>
+                </div>
+                <div class="material-card">
+                    <div class="material-icon">🪨</div>
+                    <h3>Rock Spalls & Stones</h3>
+                    <p>Larger rock material for gabions, erosion control and heavy base applications.</p>
+                    <div class="material-sizes">Various sizes</div>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top:40px;">
+                <a href="products.html" class="btn btn-primary">See Full Product List →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Pricing</div>
+                <h2>Transparent Truck-Load Pricing</h2>
+                <p>We supply by the full truck load. Get today’s rates for the materials and quantity you need — competitive and clear.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Builder’s Mix / Aggregate</h3>
+                    <div class="price-label">Full Truck Load</div>
+                    <div class="price-value">Request Quote</div>
+                    <div class="price-note">10mm • 14mm • 20mm</div>
+                    <ul>
+                        <li>Ideal for concrete & foundations</li>
+                        <li>Clean, well-graded material</li>
+                        <li>Fast delivery across POM</li>
+                    </ul>
+                    <a href="https://wa.me/67570787853?text=Hi%20POM%20Quarry%2C%20I%20need%20a%20quote%20for%20Builder%27s%20Mix%20%2F%20Aggregate%20full%20truck%20load." class="btn btn-primary" target="_blank" rel="noopener">Get Price on WhatsApp</a>
+                </div>
+                <div class="price-card featured">
+                    <div class="badge">Most Requested</div>
+                    <h3>Road Base Gravel</h3>
+                    <div class="price-label">Full Truck Load</div>
+                    <div class="price-value">Request Quote</div>
+                    <div class="price-note">Durable base course</div>
+                    <ul>
+                        <li>Driveways & access roads</li>
+                        <li>Hardstand & pavement base</li>
+                        <li>Volume pricing available</li>
+                    </ul>
+                    <a href="https://wa.me/67570787853?text=Hi%20POM%20Quarry%2C%20I%20need%20a%20quote%20for%20Road%20Base%20Gravel%20full%20truck%20load." class="btn btn-primary" target="_blank" rel="noopener">Get Price on WhatsApp</a>
+                </div>
+                <div class="price-card">
+                    <h3>Backfill & Other Materials</h3>
+                    <div class="price-label">Full Truck Load</div>
+                    <div class="price-value">Request Quote</div>
+                    <div class="price-note">Sand • Spalls • Soil</div>
+                    <ul>
+                        <li>Backfill & trench fill</li>
+                        <li>Fine / coarse sand gravel</li>
+                        <li>Rock spalls & garden soil</li>
+                    </ul>
+                    <a href="https://wa.me/67570787853?text=Hi%20POM%20Quarry%2C%20I%20need%20a%20quote%20for%20Backfill%20%2F%20Sand%20%2F%20Spalls." class="btn btn-primary" target="_blank" rel="noopener">Get Price on WhatsApp</a>
+                </div>
+            </div>
+            <div class="pricing-note">
+                <strong>Note:</strong> Prices depend on current stock, material type, quantity and delivery location. Message us with your requirements for an accurate, no-obligation quote. We respond quickly during business hours.
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Why POM Quarry</div>
+                <h2>Built for Builders & Contractors</h2>
+                <p>We understand project timelines and the cost of delays. Our focus is simple: quality material, reliable supply, and straightforward service.</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <h3>Ready When You Need It</h3>
+                    <p>Materials are available now. We prioritise quick turnaround so your site doesn’t wait for aggregate or backfill.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Full Truck-Load Delivery</h3>
+                    <p>We deliver by the truck load — efficient for larger orders and competitive on price per cubic metre.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Straightforward Communication</h3>
+                    <p>Message us on WhatsApp for pricing, availability and delivery timing. Fast replies, clear quotes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+        <div class="container">
+            <h2>Need Gravel or Aggregate This Week?</h2>
+            <p>Tell us the material, quantity and location. We’ll confirm availability and give you a clear price.</p>
+            <a href="https://wa.me/67570787853?text=Hi%20POM%20Quarry%2C%20I%20need%20a%20quote%20for%20materials." class="btn btn-primary" target="_blank" rel="noopener">
+                💬 WhatsApp 7078 7853
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.svg" alt="POM Quarry" style="height:52px;">
+                    </a>
+                    <p>Quality quarry materials and truck-load delivery serving construction projects in Port Moresby and surrounding areas.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="products.html">Products</a>
+                    <a href="delivery.html">Delivery</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>WhatsApp: 7078 7853</p>
+                    <p>Port Moresby, Papua New Guinea</p>
+                    <a href="https://wa.me/67570787853" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600;">Message us now →</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 POM Quarry Materials Supply. All rights reserved.</span>
+                <span>Serving Port Moresby Construction</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Bar -->
+    <div class="floating-contact">
+        <div class="container">
+            <div class="msg">
+                <span>💬</span>
+                <span>Need materials today? Message us now</span>
+            </div>
+            <a href="https://wa.me/67570787853?text=Hi%2C%20I%20need%20quarry%20materials." class="wa-btn" target="_blank" rel="noopener">
+                WhatsApp 7078 7853
+            </a>
+        </div>
+    </div>
+</body>
+</html>

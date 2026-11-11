@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truck-Load Delivery | POM Quarry Materials Supply – Port Moresby</title>
+    <meta name="description" content="Full truck-load delivery of gravel, aggregate and backfill materials across Port Moresby. Fast, reliable supply for construction sites.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a1a1a;
+            --primary-dark: #0d0d0d;
+            --accent: #f5c518;
+            --accent-hover: #e0b000;
+            --accent-light: rgba(245, 197, 24, 0.12);
+            --earth: #8B5A2B;
+            --text: #1f1f1f;
+            --text-light: #555555;
+            --bg: #f8f7f4;
+            --white: #ffffff;
+            --border: #e5e2db;
+            --shadow: 0 4px 20px rgba(0,0,0,0.08);
+            --radius: 12px;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--bg); line-height: 1.65; padding-bottom: 78px; }
+        h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; line-height: 1.25; }
+        .container { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+        a { text-decoration: none; color: inherit; }
+
+        header {
+            background: var(--primary);
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.25);
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 0;
+            gap: 20px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0;
+        }
+        .logo img {
+            height: 48px;
+            width: auto;
+            display: block;
+        }
+        nav { display: flex; align-items: center; gap: 6px; }
+        nav a {
+            color: rgba(255,255,255,0.88);
+            font-weight: 500;
+            font-size: 0.92rem;
+            padding: 8px 14px;
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+        nav a:hover, nav a.active { color: var(--accent); background: rgba(255,255,255,0.06); }
+        .header-cta {
+            background: var(--accent);
+            color: var(--primary) !important;
+            font-weight: 700 !important;
+            padding: 10px 18px !important;
+            border-radius: 8px;
+        }
+        .header-cta:hover { background: var(--accent-hover) !important; }
+        .menu-toggle { display: none; background: none; border: none; color: white; font-size: 1.6rem; cursor: pointer; }
+
+        .page-hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
+            color: white;
+            padding: 55px 0 50px;
+        }
+        .page-hero h1 { font-size: clamp(1.9rem, 4vw, 2.5rem); margin-bottom: 12px; }
+        .page-hero p { color: rgba(255,255,255,0.8); max-width: 560px; font-size: 1.08rem; }
+
+        section { padding: 60px 0; }
+        .section-header { text-align: center; max-width: 600px; margin: 0 auto 40px; }
+        .section-header h2 { font-size: 1.7rem; margin-bottom: 10px; }
+        .section-header p { color: var(--text-light); }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+            margin-bottom: 50px;
+        }
+        .step-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 28px 24px;
+            text-align: center;
+        }
+        .step-num {
+            width: 48px;
+            height: 48px;
+            background: var(--accent);
+            color: var(--primary);
+            font-weight: 800;
+            font-size: 1.2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+        }
+        .step-card h3 { font-size: 1.1rem; margin-bottom: 8px; }
+        .step-card p { font-size: 0.95rem; color: var(--text-light); }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+        .info-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 28px;
+            box-shadow: var(--shadow);
+            border-top: 4px solid var(--accent);
+        }
+        .info-card h3 { font-size: 1.15rem; margin-bottom: 10px; }
+        .info-card p { color: var(--text-light); font-size: 0.97rem; }
+
+        .cta-banner {
+            background: linear-gradient(135deg, var(--primary) 0%, #2a2a2a 100%);
+            color: white;
+            padding: 55px 0;
+            text-align: center;
+        }
+        .cta-banner h2 { font-size: 1.7rem; margin-bottom: 12px; }
+        .cta-banner p { color: rgba(255,255,255,0.8); margin-bottom: 24px; max-width: 520px; margin-left: auto; margin-right: auto; }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 14px 26px;
+            border-radius: 10px;
+            transition: all 0.2s;
+        }
+        .btn-primary {
+            background: var(--accent);
+            color: var(--primary);
+        }
+        .btn-primary:hover { background: var(--accent-hover); transform: translateY(-2px); }
+
+        footer {
+            background: var(--primary-dark);
+            color: rgba(255,255,255,0.75);
+            padding: 50px 0 30px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 36px;
+        }
+        .footer-brand .logo { margin-bottom: 14px; }
+        .footer-brand p { font-size: 0.95rem; max-width: 300px; }
+        .footer-col h4 { color: white; font-size: 1rem; margin-bottom: 16px; }
+        .footer-col a, .footer-col p { display: block; font-size: 0.92rem; margin-bottom: 10px; }
+        .footer-col a:hover { color: var(--accent); }
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 22px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.88rem;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .floating-contact {
+            position: fixed;
+            bottom: 0; left: 0; right: 0;
+            background: linear-gradient(90deg, #128C7E, #075E54);
+            color: white;
+            z-index: 9999;
+            box-shadow: 0 -4px 24px rgba(0,0,0,0.2);
+            padding: 11px 0;
+        }
+        .floating-contact .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        .floating-contact .msg { font-weight: 600; font-size: 0.95rem; display: flex; align-items: center; gap: 10px; }
+        .floating-contact a.wa-btn {
+            background: white;
+            color: #075E54;
+            font-weight: 700;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        @media (max-width: 900px) {
+            .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+            nav { display: none; }
+            .menu-toggle { display: block; }
+            nav.open {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%; left: 0; right: 0;
+                background: var(--primary);
+                padding: 16px;
+                gap: 4px;
+                box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+            }
+            .header-inner { position: relative; }
+        }
+        @media (max-width: 600px) {
+            .floating-contact .msg span { display: none; }
+            .floating-contact .container { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="POM Quarry Materials Supply">
+            </a>
+            <button class="menu-toggle" aria-label="Menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="delivery.html" class="active">Delivery</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="https://wa.me/67570787853" class="header-cta" target="_blank" rel="noopener">WhatsApp Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Truck-Load Delivery</h1>
+            <p>We deliver full loads of gravel, aggregate and backfill materials to construction sites across Port Moresby. Efficient, reliable and priced for volume.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2>How Delivery Works</h2>
+                <p>Simple process from enquiry to material on site.</p>
+            </div>
+            <div class="steps">
+                <div class="step-card">
+                    <div class="step-num">1</div>
+                    <h3>Send Your Requirements</h3>
+                    <p>WhatsApp us the material type, size, approximate quantity and delivery location.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">2</div>
+                    <h3>Receive a Clear Quote</h3>
+                    <p>We confirm availability, price per load and expected delivery window.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">3</div>
+                    <h3>Material Delivered</h3>
+                    <p>Truck arrives on site with the agreed load. Ready for your project.</p>
+                </div>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Full Truck Loads</h3>
+                    <p>We specialise in truck-load quantities. This keeps unit costs competitive and suits the volumes most building and civil projects require.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Port Moresby Coverage</h3>
+                    <p>Delivery available across Port Moresby and nearby project locations. Tell us the suburb or site address when you enquire.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Timing & Coordination</h3>
+                    <p>We work with your site schedule. Confirm access conditions and preferred delivery day when you place the order.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner">
+        <div class="container">
+            <h2>Need a Load This Week?</h2>
+            <p>Message us with the material, quantity and location. We’ll confirm stock and delivery timing as quickly as possible.</p>
+            <a href="https://wa.me/67570787853?text=Hi%20POM%20Quarry%2C%20I%20need%20delivery%20of%20materials.%20Details%3A" class="btn btn-primary" target="_blank" rel="noopener">
+                💬 Arrange Delivery on WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.svg" alt="POM Quarry" style="height:52px;">
+                    </a>
+                    <p>Quality quarry materials and truck-load delivery serving construction projects in Port Moresby and surrounding areas.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="products.html">Products</a>
+                    <a href="delivery.html">Delivery</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>WhatsApp: 7078 7853</p>
+                    <p>Port Moresby, Papua New Guinea</p>
+                    <a href="https://wa.me/67570787853" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600;">Message us now →</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 POM Quarry Materials Supply. All rights reserved.</span>
+                <span>Serving Port Moresby Construction</span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-contact">
+        <div class="container">
+            <div class="msg">
+                <span>💬</span>
+                <span>Need materials today? Message us now</span>
+            </div>
+            <a href="https://wa.me/67570787853?text=Hi%2C%20I%20need%20quarry%20materials." class="wa-btn" target="_blank" rel="noopener">
+                WhatsApp 7078 7853
+            </a>
+        </div>
+    </div>
+</body>
+</html>
